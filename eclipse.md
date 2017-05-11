@@ -42,5 +42,5 @@
                 ->Formatter，右侧new
                 在Profile name中自己取个名字，然后下面选择Eclipse [built-in]，点击ok。
                 然后在Acrive profile中选择自己创建的，点击Edit。
-                Tab policy选择Spaces only，下面连个size写4即可。保存。
+                Tab policy选择Spaces only，下面两个size写4即可。保存。
 ```
