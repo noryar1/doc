@@ -18,7 +18,7 @@
 ```
 
 ### <a name="jdk">jdk设置</a>
-在idea右上角找到Project Structure图片![projectStructure](./idea/projectStructure.png)。
+在idea右上角找到Project Structure图片![projectStructure](./idea/projectStructure.png =10x10)。
 ```
 进入以后选择左侧菜单
         ->Global Libraries，选择+号，JAVA
@@ -28,10 +28,10 @@
         进入->Peoject菜单，选择刚才配置的jdk，保存
 ```
 过程如图：
-![jdk](./idea/jdk.png)
+![jdk](./idea/jdk.png =100x100)
 
 ### <a name="mavenrun">maven启动项目</a>
 1. 找到配置位置：
-    ![](./idea/mavenrun1.png)
+    ![](./idea/mavenrun1.png =100x100)
 2. 选择Edit Configuration，新增一个，选择Maven，右侧选择项目，起名字，配置JVM参数。
 3. 回到主界面，配置右侧有个绿色箭头，点击启动。
