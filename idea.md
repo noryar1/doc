@@ -31,7 +31,7 @@
 <img src="./idea/jdk.png" width="400" height="400" />
 
 ### <a name="mavenrun">maven启动项目</a>
-1. 找到配置位置：
+1. 找到配置位置：<br>
     <img src="./idea/mavenrun1.png" width="500" height="50" />
 2. 选择Edit Configuration，新增一个，选择Maven，右侧选择项目，起名字，配置JVM参数。
 3. 回到主界面，配置右侧有个绿色箭头，点击启动。
