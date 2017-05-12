@@ -25,14 +25,16 @@
 
 ### <a name="tomcatPlugin">tomcat插件</a>
 ```
-<groupId>org.apache.tomcat.maven</groupId>
-<artifactId>tomcat7-maven-plugin</artifactId>
-<version>2.2</version>
-<configuration>
-    <port>8080</port>
-    <path>/</path>
-    <uriEncoding>UTF-8</uriEncoding>
-    <finalName>agile</finalName>
-    <server>tomcat7</server>
-</configuration>
+<plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+    <configuration>
+        <port>8080</port>
+        <path>/</path>
+        <uriEncoding>UTF-8</uriEncoding>
+        <finalName>agile</finalName>
+        <server>tomcat7</server>
+    </configuration>
+</plugin>
 ```
