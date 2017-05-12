@@ -27,8 +27,8 @@
         
         进入->Peoject菜单，选择刚才配置的jdk，保存
 ```
-过程如图：
-<img src="./idea/jdk.png" width="500" height="500" />
+过程如图：<br>
+<img src="./idea/jdk.png" width="400" height="400" />
 
 ### <a name="mavenrun">maven启动项目</a>
 1. 找到配置位置：
