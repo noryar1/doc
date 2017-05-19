@@ -3,6 +3,7 @@
 - [安装](#install)
 - [常用命令](#normalAdmin)
     - [安装软件](#softInstall)
+    - [卸载软件](#removeSoft)
 - [常见问题](#Q)
     - [权限问题](#rootQ)
 
@@ -17,6 +18,11 @@
 ### <a name="softInstall">安装软件</a>
 ```
 brew install <软件名称>
+```
+
+## <a name="removeSoft">卸载软件</a>
+```
+brew remove <软件名称>
 ```
 
 ## <a name="Q">常见问题</a>
