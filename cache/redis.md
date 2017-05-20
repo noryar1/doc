@@ -11,14 +11,14 @@
 ### <a name="normalinstall">普通安装与可能出现的问题</a>
 下载很简单，去官网下载即可。
 
-安装：
+#### 安装：
 ```
 tar -zxf <安装包>
 cd <redis目录>
 make
 ```
 
-启动：安装包目录执行命令
+#### 启动：安装包目录执行命令
 ```
 ./src/redis-server
 ```
@@ -29,7 +29,7 @@ vi <redis目录>/redis.conf
 在命令模式下输入『/daemonize』,找到 daemonize no 这一行，将no改成yes
 ```
 
-<span style="color: red;">安装时候可能出现的问题：</span><br>
+#### 安装时候可能出现的问题
 异常一：make[2]: cc: Command not found
 异常原因：没有安装gcc
 解决方案：yum install gcc-c++
