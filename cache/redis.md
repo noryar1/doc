@@ -29,7 +29,7 @@ vi <redis目录>/redis.conf
 在命令模式下输入『/daemonize』,找到 daemonize no 这一行，将no改成yes
 ```
 
-<span style="color: red;">安装时候可能出现的问题：</span>
+<span style="color: red;">安装时候可能出现的问题：</span><br>
 异常一：make[2]: cc: Command not found
 异常原因：没有安装gcc
 解决方案：yum install gcc-c++
