@@ -2,8 +2,6 @@
 ## 目录
 - [安装](#install)
 - [常用命令](#normalAdmin)
-    - [安装软件](#softInstall)
-    - [卸载软件](#removeSoft)
 - [常见问题](#Q)
     - [权限问题](#rootQ)
 
@@ -15,14 +13,29 @@
 ```
 
 ## <a name="normalAdmin">常用命令</a>
-### <a name="softInstall">安装软件</a>
+### 安装软件
 ```
 brew install <软件名称>
 ```
 
-## <a name="removeSoft">卸载软件</a>
+### 卸载软件
 ```
 brew remove <软件名称>
+```
+
+### 清除下载的安装包
+```
+brew cleanup
+```
+
+### brew升级
+```
+brew update
+```
+
+### 升级软件
+```
+brew <软件名称> upgrade
 ```
 
 ## <a name="Q">常见问题</a>
