@@ -81,3 +81,16 @@ brew install ruby
 后面的参数是所有redis服务器的IP地址与6379端口号。端口号可以自己在redis.conf文件中定义。默认为6379。
 <span style="font-weight: bold; color: red;">执行完该命令后，以后redis服务器启动自动就会以集群方式启动。</span>
 
+#### 4. 集群安装中可能出现的问题
+redis集群创建执行一直等待 <span style="color: red;">Waiting for the cluster to join</span>很久都没有反应
+原因：
+redis集群不仅需要开通redis客户端连接的端口，而且需要开通集群总线端口
+集群总线端口为redis客户端连接的端口 + 10000
+如redis端口为6379
+则集群总线端口为16379
+故，所有服务器的点需要开通redis的客户端连接端口和集群总线端口
+注意：iptables 放开，如果有安全组，也要放开这两个端口
+
+[ERR] Node XXXXXX is not empty. Either the node already knows other nodes (check with CLUSTER NODES) or contains some key in database 0
+解决方法是删除生成的配置文件nodes.conf，如果不行则说明现在创建的结点包括了旧集群的结点信息，需要删除redis的持久化文件后再重启redis，比如：appendonly.aof、dump.rdb
+
