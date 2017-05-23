@@ -7,6 +7,8 @@
     - [jdk设置](#jdk)
     - [maven启动项目](#mavenrun)
     - [修改快捷键](#changekeymap)
+- [插件](#plugin)
+    - [gerrit](#gerrit)
 
 ## <a name="install">安装</a>
 下载安装dmg文件，打开，选择License server：http://idea.iteblog.com/key.php
@@ -42,4 +44,13 @@
 ```
 搜索 implementations(s),双击或者右键，选择鼠标按键，按着command+鼠标左键即可。
 搜索 find，找到edit目录下对应的功能，双击或者右键，选择键盘按键，按着command+f即可。
+```
+
+
+## <a name = "plugin">插件</a>
+### <a name = "gerrit">gerrit</a>
+```
+这个插件能够提供refs/for的功能
+首先preferences -> 搜索plugins, 点击Browse repositories -> 搜索gerrit，点击安装，然后重启idea
+之后提交时候选择push，就可以看到push to gerrit的选项了，打勾，然后在上面输入/refs/for即可
 ```
