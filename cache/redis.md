@@ -13,7 +13,7 @@
     - [redis live](#redis-live)
     - [redis stat](#redis-stat)
 
-## <a name = "introduction>简介</a>
+## <a name = "introduction">简介</a>
 ### <a name = "whatis">redis是什么</a>
 Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统。
 
