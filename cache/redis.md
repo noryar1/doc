@@ -257,6 +257,7 @@ redis.conf 配置项说明如下：
 ## <a name = "monitor">监控</a>
 ### <a name = "redis-live">redis live</a>
 该方案使用monitor实现，对性能会有影响。
+githup地址：https://github.com/nkrode
 
 ### <a name = "redis-stat">redis stat</a>
 该方案使用『info』实现，对性能影响小。
