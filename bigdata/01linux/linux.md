@@ -4,8 +4,11 @@
 - [CentOS](#centOS)
     - [安装](#installCentOS)
     - [命令](#command)
-
-
+        - [日常操作命令](#normalCommand)
+        - [文件系统操作](#fileCommand)
+        - [文件权限操作](#fileRuleCommand)
+        - [用户管理操作](#userCommand)
+        - [系统管理操作](#sysCommand)
 
 
 
@@ -15,9 +18,8 @@
 安装教程：http://blog.csdn.net/lee272616/article/details/54958623
 
 ### <a name = "command">命令</a>
-linux的命令操作
+#### <a name="normalCommand">日常操作命令</a>
 ```
-1、日常操作命令  
 	**查看当前所在的工作目录
 	pwd
 
@@ -27,9 +29,10 @@ linux的命令操作
 	**查看有谁在线（哪些人登陆到了服务器）
 	who  查看当前在线
 	last 查看最近的登陆历史记录
+```
 
-
-2、文件系统操作
+#### <a name="fileCommand">文件系统操作</a>
+```
 	ls /    查看根目录下的子节点（文件夹和文件）信息
 	ls -al  -a是显示隐藏文件   -l是以更详细的列表形式显示
 
@@ -79,10 +82,29 @@ linux的命令操作
 	查找并替换（在底行命令模式中输入）
 	%s/sad/88888888888888     效果：查找文件中所有sad，替换为88888888888888
 	/you       效果：查找文件中出现的you，并定位到第一个找到的地方，按n可以定位到下一个匹配位置（按N定位到上一个）
+	
+	查看文件内容
+	cat <filename> 一次将文件内容全部输出到控制台。
+	more <filename> 这个可以翻页查看
+		空格，向后翻页；
+		b,向前翻页；
+		q,退出；
+	less <filename> 这个不仅能翻一页，还能查询关键字，还能翻一行。
+		空格，向后翻页；
+    	b,向前翻页；
+		上/下键，上/下一行。
+		q,退出
+		/关键字，可以查询关键字。查询以后『n』可以查询下一个。
+		
+	tail -行数 <filename> 查看文件尾部行数的内容。
+	tail -f <filename>实时查看文件。根据文件inode号跟踪文件。如果文件改名了而，则跟踪改名后的文件。
+	tail -F <filename>实时查询文件。但是根据文件名来跟踪。
+	
+	head -行数 <filename> 查看文件头部行数的内容。
+```
 
-
-3、文件权限的操作
-
+#### <a name="fileRuleCommand">文件权限操作</a>
+```
 	****linux文件权限的描述格式解读
 	drwxr-xr-x      （也可以用二进制表示  111 101 101  -->  755）
 
@@ -108,9 +130,10 @@ linux的命令操作
 
 	目录没有执行权限的时候普通用户不能进入
 	文件只有读写权限的时候普通用户是可以删除的(删除文件不是修改它,是操作父及目录),只要父级目录有执行和修改的权限
+```
 
-4、基本的用户管理
-
+#### <a name="userCommand">用户管理操作</a>
+```
 	*****添加用户
 	useradd  angela
 	要修改密码才能登陆 
@@ -125,9 +148,10 @@ linux的命令操作
 
 	然后，hadoop用户就可以用sudo来执行系统级别的指令
 	[hadoop@shizhan ~]$ sudo useradd huangxiaoming
+```
 
-
-5、系统管理操作
+#### <a name="sysCommand">系统管理操作</a>
+```
 	*****查看主机名
 	hostname
 	****修改主机名(重启后无效)
@@ -178,6 +202,7 @@ linux的命令操作
 	chkconfig   查看所有服务器自启配置
 	chkconfig iptables off   关掉指定服务的自动启动
 	chkconfig iptables on   开启指定服务的自动启动
+	chkconfig iptables --list 查看该服务的自启配置
 
 
 	*****系统启动级别管理
@@ -189,7 +214,7 @@ linux的命令操作
 	#   2 - Multiuser, without NFS (The same as 3, if you do not have networking)
 	#   3 - Full multiuser mode
 	#   4 - unused
-	#   5 - X11
+	#   5 - X11 这个就是图形界面
 	#   6 - reboot (Do NOT set initdefault to this)
 	#
 	id:3:initdefault:
