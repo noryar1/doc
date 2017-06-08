@@ -52,6 +52,8 @@ make
 ```
 vi <redis目录>/redis.conf
 在命令模式下输入『/daemonize』,找到 daemonize no 这一行，将no改成yes
+然后指定配置文件进行启动
+./src/redis-server redis.conf
 ```
 
 #### 安装时候可能出现的问题
